@@ -48,7 +48,7 @@ function generateNextColor() {
     setTimeout(
         () => {
             $("#" + nextColor).animate({ opacity: 0.5 }).animate({ opacity: 1 });
-            colorSound(nextColor);
+            playSound(nextColor);
         }, 1000);
     setTimeout(() => { $("#level-title").text("Level " + game.sequence.length) }, 200);
 }
